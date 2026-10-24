@@ -38,6 +38,15 @@ as strong as the best numeric signals. The label weight is capped so one
 sentence cannot outvote three numeric signals, and it always appears as a
 reason code so the AE sees why it moved the rank.
 
+### 5b. The transcripts are a near-perfect oracle in this dataset, and we say so
+After labelling, every "risk" transcript churned or contracted, every
+"growth" transcript expanded, every "neutral" one stayed flat. The synthetic
+generator evidently derived the outcome from the call template. Uncapped, the
+label alone would "solve" the dataset, which real call notes never do. The
+20-point cap is therefore not just a safety measure: it is what keeps the
+ranker honest about the numeric signals an AE would rely on in production.
+Labels moved top-decile risk recall from 64% to 71% (precision 70% to 78%).
+
 ### 6. Two visible scores, one sort key
 Risk (0–100) and opportunity (0–100) are shown separately because an AE acts
 differently on "save" vs "grow". A single `priority` =

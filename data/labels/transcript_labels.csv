@@ -1,0 +1,1001 @@
+account_id,intent,risk_type,expansion_type,confidence,label_source,rationale
+ACC-0001,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0002,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0003,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0004,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0005,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0006,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0007,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0008,neutral,none,none,0.95,llm_template,Stable.
+ACC-0009,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0010,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0011,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0012,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0013,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0014,none,none,none,1.0,no_transcript,
+ACC-0015,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0016,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0017,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0018,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0019,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0020,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0021,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0022,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0023,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0024,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0025,neutral,none,none,0.95,llm_template,Stable.
+ACC-0026,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0027,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0028,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0029,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0030,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0031,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0032,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0033,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0034,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0035,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0036,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0037,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0038,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0039,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0040,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0041,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0042,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0043,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0044,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0045,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0046,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0047,neutral,none,none,0.95,llm_template,Stable.
+ACC-0048,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0049,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0050,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0051,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0052,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0053,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0054,none,none,none,1.0,no_transcript,
+ACC-0055,none,none,none,1.0,no_transcript,
+ACC-0056,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0057,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0058,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0059,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0060,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0061,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0062,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0063,none,none,none,1.0,no_transcript,
+ACC-0064,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0065,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0066,none,none,none,1.0,no_transcript,
+ACC-0067,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0068,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0069,risk,competitor,none,0.95,llm_template,Competitor demo with a decision tied to renewal.
+ACC-0070,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0071,none,none,none,1.0,no_transcript,
+ACC-0072,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0073,none,none,none,1.0,no_transcript,
+ACC-0074,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0075,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0076,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0077,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0078,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0079,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0080,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0081,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0082,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0083,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0084,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0085,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0086,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0087,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0088,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0089,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0090,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0091,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0092,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0093,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0094,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0095,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0096,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0097,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0098,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0099,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0100,none,none,none,1.0,no_transcript,
+ACC-0101,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0102,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0103,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0104,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0105,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0106,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0107,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0108,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0109,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0110,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0111,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0112,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0113,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0114,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0115,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0116,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0117,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0118,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0119,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0120,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0121,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0122,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0123,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0124,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0125,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0126,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0127,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0128,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0129,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0130,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0131,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0132,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0133,none,none,none,1.0,no_transcript,
+ACC-0134,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0135,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0136,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0137,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0138,none,none,none,1.0,no_transcript,
+ACC-0139,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0140,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0141,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0142,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0143,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0144,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0145,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0146,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0147,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0148,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0149,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0150,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0151,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0152,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0153,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0154,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0155,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0156,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0157,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0158,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0159,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0160,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0161,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0162,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0163,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0164,none,none,none,1.0,no_transcript,
+ACC-0165,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0166,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0167,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0168,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0169,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0170,neutral,none,none,0.95,llm_template,Stable.
+ACC-0171,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0172,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0173,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0174,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0175,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0176,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0177,none,none,none,1.0,no_transcript,
+ACC-0178,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0179,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0180,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0181,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0182,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0183,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0184,none,none,none,1.0,no_transcript,
+ACC-0185,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0186,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0187,neutral,none,none,0.95,llm_template,Stable.
+ACC-0188,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0189,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0190,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0191,none,none,none,1.0,no_transcript,
+ACC-0192,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0193,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0194,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0195,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0196,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0197,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0198,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0199,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0200,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0201,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0202,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0203,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0204,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0205,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0206,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0207,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0208,none,none,none,1.0,no_transcript,
+ACC-0209,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0210,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0211,neutral,none,none,0.95,llm_template,Stable.
+ACC-0212,neutral,none,none,0.95,llm_template,Stable.
+ACC-0213,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0214,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0215,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0216,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0217,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0218,neutral,none,none,0.95,llm_template,Stable.
+ACC-0219,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0220,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0221,none,none,none,1.0,no_transcript,
+ACC-0222,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0223,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0224,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0225,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0226,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0227,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0228,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0229,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0230,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0231,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0232,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0233,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0234,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0235,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0236,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0237,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0238,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0239,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0240,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0241,none,none,none,1.0,no_transcript,
+ACC-0242,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0243,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0244,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0245,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0246,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0247,none,none,none,1.0,no_transcript,
+ACC-0248,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0249,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0250,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0251,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0252,none,none,none,1.0,no_transcript,
+ACC-0253,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0254,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0255,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0256,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0257,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0258,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0259,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0260,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0261,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0262,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0263,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0264,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0265,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0266,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0267,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0268,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0269,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0270,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0271,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0272,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0273,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0274,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0275,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0276,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0277,neutral,none,none,0.95,llm_template,Stable.
+ACC-0278,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0279,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0280,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0281,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0282,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0283,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0284,risk,consolidation,none,0.9,llm_template,M&A where the other side's tool is favoured.
+ACC-0285,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0286,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0287,risk,churn_intent,none,0.98,llm_template,Asked how to leave early.
+ACC-0288,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0289,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0290,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0291,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0292,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0293,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0294,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0295,none,none,none,1.0,no_transcript,
+ACC-0296,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0297,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0298,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0299,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0300,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0301,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0302,neutral,none,none,0.95,llm_template,Stable.
+ACC-0303,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0304,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0305,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0306,neutral,none,none,0.95,llm_template,Stable.
+ACC-0307,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0308,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0309,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0310,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0311,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0312,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0313,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0314,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0315,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0316,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0317,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0318,neutral,none,none,0.95,llm_template,Stable.
+ACC-0319,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0320,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0321,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0322,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0323,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0324,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0325,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0326,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0327,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0328,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0329,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0330,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0331,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0332,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0333,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0334,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0335,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0336,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0337,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0338,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0339,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0340,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0341,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0342,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0343,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0344,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0345,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0346,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0347,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0348,neutral,none,none,0.95,llm_template,Stable.
+ACC-0349,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0350,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0351,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0352,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0353,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0354,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0355,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0356,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0357,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0358,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0359,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0360,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0361,none,none,none,1.0,no_transcript,
+ACC-0362,neutral,none,none,0.95,llm_template,Stable.
+ACC-0363,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0364,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0365,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0366,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0367,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0368,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0369,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0370,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0371,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0372,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0373,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0374,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0375,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0376,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0377,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0378,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0379,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0380,risk,consolidation,none,0.9,llm_template,M&A where the other side's tool is favoured.
+ACC-0381,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0382,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0383,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0384,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0385,none,none,none,1.0,no_transcript,
+ACC-0386,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0387,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0388,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0389,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0390,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0391,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0392,risk,dissatisfaction,none,0.85,llm_template,Silence after a complaint.
+ACC-0393,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0394,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0395,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0396,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0397,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0398,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0399,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0400,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0401,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0402,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0403,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0404,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0405,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0406,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0407,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0408,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0409,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0410,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0411,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0412,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0413,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0414,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0415,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0416,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0417,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0418,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0419,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0420,none,none,none,1.0,no_transcript,
+ACC-0421,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0422,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0423,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0424,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0425,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0426,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0427,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0428,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0429,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0430,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0431,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0432,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0433,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0434,neutral,none,none,0.95,llm_template,Stable.
+ACC-0435,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0436,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0437,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0438,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0439,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0440,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0441,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0442,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0443,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0444,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0445,neutral,none,none,0.95,llm_template,Stable.
+ACC-0446,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0447,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0448,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0449,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0450,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0451,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0452,none,none,none,1.0,no_transcript,
+ACC-0453,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0454,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0455,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0456,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0457,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0458,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0459,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0460,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0461,neutral,none,none,0.95,llm_template,Stable.
+ACC-0462,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0463,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0464,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0465,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0466,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0467,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0468,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0469,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0470,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0471,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0472,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0473,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0474,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0475,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0476,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0477,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0478,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0479,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0480,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0481,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0482,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0483,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0484,none,none,none,1.0,no_transcript,
+ACC-0485,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0486,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0487,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0488,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0489,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0490,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0491,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0492,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0493,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0494,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0495,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0496,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0497,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0498,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0499,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0500,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0501,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0502,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0503,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0504,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0505,neutral,none,none,0.95,llm_template,Stable.
+ACC-0506,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0507,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0508,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0509,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0510,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0511,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0512,risk,dissatisfaction,none,0.9,llm_template,"End-user frustration, low internal NPS."
+ACC-0513,none,none,none,1.0,no_transcript,
+ACC-0514,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0515,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0516,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0517,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0518,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0519,risk,consolidation,none,0.9,llm_template,M&A where the other side's tool is favoured.
+ACC-0520,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0521,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0522,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0523,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0524,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0525,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0526,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0527,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0528,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0529,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0530,risk,dissatisfaction,none,0.9,llm_template,"End-user frustration, low internal NPS."
+ACC-0531,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0532,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0533,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0534,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0535,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0536,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0537,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0538,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0539,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0540,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0541,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0542,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0543,none,none,none,1.0,no_transcript,
+ACC-0544,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0545,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0546,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0547,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0548,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0549,none,none,none,1.0,no_transcript,
+ACC-0550,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0551,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0552,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0553,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0554,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0555,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0556,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0557,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0558,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0559,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0560,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0561,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0562,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0563,none,none,none,1.0,no_transcript,
+ACC-0564,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0565,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0566,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0567,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0568,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0569,risk,competitor,none,0.95,llm_template,Competitor demo with a decision tied to renewal.
+ACC-0570,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0571,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0572,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0573,none,none,none,1.0,no_transcript,
+ACC-0574,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0575,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0576,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0577,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0578,none,none,none,1.0,no_transcript,
+ACC-0579,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0580,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0581,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0582,neutral,none,none,0.95,llm_template,Stable.
+ACC-0583,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0584,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0585,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0586,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0587,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0588,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0589,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0590,neutral,none,none,0.95,llm_template,Stable.
+ACC-0591,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0592,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0593,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0594,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0595,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0596,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0597,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0598,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0599,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0600,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0601,neutral,none,none,0.95,llm_template,Stable.
+ACC-0602,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0603,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0604,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0605,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0606,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0607,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0608,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0609,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0610,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0611,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0612,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0613,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0614,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0615,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0616,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0617,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0618,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0619,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0620,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0621,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0622,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0623,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0624,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0625,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0626,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0627,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0628,growth,none,seats,0.95,llm_template,Seat proposal with a deadline this quarter.
+ACC-0629,risk,dissatisfaction,none,0.9,llm_template,"End-user frustration, low internal NPS."
+ACC-0630,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0631,neutral,none,none,0.95,llm_template,Stable.
+ACC-0632,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0633,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0634,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0635,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0636,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0637,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0638,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0639,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0640,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0641,neutral,none,none,0.95,llm_template,Stable.
+ACC-0642,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0643,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0644,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0645,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0646,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0647,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0648,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0649,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0650,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0651,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0652,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0653,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0654,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0655,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0656,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0657,none,none,none,1.0,no_transcript,
+ACC-0658,none,none,none,1.0,no_transcript,
+ACC-0659,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0660,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0661,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0662,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0663,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0664,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0665,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0666,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0667,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0668,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0669,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0670,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0671,risk,roi_doubt,none,0.85,llm_template,Falling usage and admitted de-prioritisation.
+ACC-0672,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0673,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0674,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0675,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0676,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0677,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0678,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0679,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0680,none,none,none,1.0,no_transcript,
+ACC-0681,risk,churn_intent,none,0.98,llm_template,Asked how to leave early.
+ACC-0682,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0683,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0684,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0685,neutral,none,none,0.95,llm_template,Stable.
+ACC-0686,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0687,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0688,none,none,none,1.0,no_transcript,
+ACC-0689,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0690,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0691,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0692,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0693,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0694,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0695,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0696,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0697,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0698,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0699,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0700,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0701,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0702,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0703,none,none,none,1.0,no_transcript,
+ACC-0704,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0705,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0706,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0707,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0708,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0709,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0710,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0711,risk,dissatisfaction,none,0.9,llm_template,"End-user frustration, low internal NPS."
+ACC-0712,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0713,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0714,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0715,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0716,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0717,none,none,none,1.0,no_transcript,
+ACC-0718,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0719,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0720,neutral,none,none,0.95,llm_template,Stable.
+ACC-0721,none,none,none,1.0,no_transcript,
+ACC-0722,none,none,none,1.0,no_transcript,
+ACC-0723,risk,support_escalation,none,0.98,llm_template,Open escalation and cancellation threat.
+ACC-0724,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0725,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0726,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0727,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0728,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0729,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0730,none,none,none,1.0,no_transcript,
+ACC-0731,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0732,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0733,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0734,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0735,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0736,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0737,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0738,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0739,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0740,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0741,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0742,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0743,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0744,neutral,none,none,0.95,llm_template,Stable.
+ACC-0745,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0746,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0747,neutral,none,none,0.95,llm_template,Stable.
+ACC-0748,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0749,risk,roi_doubt,none,0.9,llm_template,Expected more impact = value not demonstrated.
+ACC-0750,none,none,none,1.0,no_transcript,
+ACC-0751,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0752,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0753,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0754,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0755,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0756,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0757,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0758,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0759,neutral,none,none,0.95,llm_template,Stable.
+ACC-0760,none,none,none,1.0,no_transcript,
+ACC-0761,risk,dissatisfaction,none,0.85,llm_template,Silence after a complaint.
+ACC-0762,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0763,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0764,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0765,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0766,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0767,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0768,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0769,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0770,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0771,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0772,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0773,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0774,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0775,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0776,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0777,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0778,none,none,none,1.0,no_transcript,
+ACC-0779,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0780,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0781,neutral,none,none,0.95,llm_template,Stable.
+ACC-0782,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0783,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0784,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0785,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0786,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0787,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0788,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0789,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0790,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0791,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0792,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0793,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0794,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0795,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0796,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0797,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0798,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0799,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0800,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0801,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0802,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0803,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0804,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0805,neutral,none,none,0.95,llm_template,Stable.
+ACC-0806,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0807,risk,competitor,none,0.95,llm_template,Competitor demo with a decision tied to renewal.
+ACC-0808,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0809,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0810,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0811,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0812,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0813,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0814,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0815,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0816,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0817,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0818,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0819,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0820,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0821,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0822,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0823,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0824,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0825,risk,roi_doubt,none,0.98,llm_template,Explicit ROI concern and may-not-renew.
+ACC-0826,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0827,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0828,growth,none,seats,0.95,llm_template,We are the consolidation winner; competitor displaced; seats added.
+ACC-0829,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0830,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0831,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0832,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-0833,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0834,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0835,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0836,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0837,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0838,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0839,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0840,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0841,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0842,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0843,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0844,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0845,neutral,none,none,0.95,llm_template,Stable.
+ACC-0846,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0847,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0848,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0849,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0850,neutral,none,none,0.95,llm_template,Stable.
+ACC-0851,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0852,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0853,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0854,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0855,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0856,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0857,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0858,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0859,risk,competitor,none,0.95,llm_template,Competitor demo with a decision tied to renewal.
+ACC-0860,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0861,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0862,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0863,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0864,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0865,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0866,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0867,risk,dissatisfaction,none,0.9,llm_template,"End-user frustration, low internal NPS."
+ACC-0868,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0869,neutral,none,none,0.95,llm_template,Stable.
+ACC-0870,none,none,none,1.0,no_transcript,
+ACC-0871,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0872,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0873,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0874,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0875,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0876,risk,competitor,none,0.95,llm_template,Competitor demo with a decision tied to renewal.
+ACC-0877,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0878,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0879,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0880,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0881,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0882,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0883,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0884,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0885,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0886,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0887,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0888,none,none,none,1.0,no_transcript,
+ACC-0889,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0890,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0891,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0892,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0893,none,none,none,1.0,no_transcript,
+ACC-0894,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0895,growth,none,module,0.95,llm_template,Module access for a whole org.
+ACC-0896,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0897,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0898,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0899,growth,none,seats,0.98,llm_template,Budget approved; strongest growth signal in the set.
+ACC-0900,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0901,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0902,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0903,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0904,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0905,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0906,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0907,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0908,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0909,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0910,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0911,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0912,none,none,none,1.0,no_transcript,
+ACC-0913,neutral,none,none,0.95,llm_template,Stable.
+ACC-0914,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0915,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0916,neutral,none,none,0.95,llm_template,Stable.
+ACC-0917,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0918,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0919,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0920,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0921,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0922,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0923,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0924,growth,none,seats,0.98,llm_template,Explicit seat upsell with buy-in.
+ACC-0925,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0926,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0927,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0928,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0929,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0930,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0931,neutral,none,none,0.9,llm_template,"Healthy, embedded, no ask."
+ACC-0932,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0933,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0934,neutral,none,none,0.95,llm_template,Stable.
+ACC-0935,risk,budget,none,0.9,llm_template,Board-mandated spend cut; we are in scope.
+ACC-0936,neutral,none,none,0.95,llm_template,"Satisfied, no expansion."
+ACC-0937,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0938,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0939,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0940,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0941,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0942,risk,competitor,none,0.95,llm_template,Named competitor being evaluated as replacement.
+ACC-0943,neutral,none,none,0.9,llm_template,Values product; explicitly not growing now.
+ACC-0944,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0945,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0946,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0947,none,none,none,1.0,no_transcript,
+ACC-0948,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0949,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0950,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0951,growth,none,module,0.95,llm_template,Cross-sell of a module with an initial seat ask.
+ACC-0952,risk,consolidation,none,0.95,llm_template,Replacement by an in-house build.
+ACC-0953,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0954,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0955,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0956,growth,none,seats,0.9,llm_template,Scoping call for additional licences.
+ACC-0957,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0958,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0959,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0960,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0961,risk,budget,none,0.98,llm_template,Named on the cost-reduction list.
+ACC-0962,neutral,none,none,0.75,llm_template,"Not strategic is a soft long-term risk, but no action signal; kept neutral so it does not inflate the risk list."
+ACC-0963,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0964,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0965,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0966,growth,none,new_team,0.9,llm_template,Case study to justify expansion into another team.
+ACC-0967,growth,none,seats,0.9,llm_template,Pricing-tier question plus a stated plan to double usage.
+ACC-0968,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0969,none,none,none,1.0,no_transcript,
+ACC-0970,growth,none,seats,0.98,llm_template,Concrete seat request for a new team.
+ACC-0971,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0972,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0973,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0974,neutral,none,none,0.7,llm_template,"Future interest in a module, deferred beyond this quarter; neutral now, worth a talking point."
+ACC-0975,growth,none,new_team,0.9,llm_template,Board visibility and planned expansion to a new team.
+ACC-0976,risk,competitor,none,0.9,llm_template,Avoidance plus alternatives being explored.
+ACC-0977,growth,none,new_team,0.9,llm_template,ROI used internally to justify expansion.
+ACC-0978,growth,none,new_team,0.95,llm_template,"Two more teams, seat add-on in discussion."
+ACC-0979,none,none,none,1.0,no_transcript,
+ACC-0980,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0981,neutral,none,none,0.8,llm_template,"'Re-evaluate at renewal' is normal procurement language, not a threat."
+ACC-0982,risk,consolidation,none,0.95,llm_template,We lose a vendor consolidation.
+ACC-0983,none,none,none,1.0,no_transcript,
+ACC-0984,neutral,none,none,0.9,llm_template,"As expected, no asks."
+ACC-0985,neutral,none,none,0.95,llm_template,Explicitly no risk.
+ACC-0986,neutral,none,none,0.7,llm_template,Latent expansion interest ('may revisit') but no commitment; neutral with a note for the brief.
+ACC-0987,neutral,none,none,0.85,llm_template,Feature requests from a satisfied customer.
+ACC-0988,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0989,none,none,none,1.0,no_transcript,
+ACC-0990,growth,none,seats,0.95,llm_template,"Promoted champion, concrete seat request."
+ACC-0991,neutral,none,none,0.85,llm_template,Stable; low attention from sponsor but no negative signal.
+ACC-0992,neutral,none,none,0.95,llm_template,Explicitly calm.
+ACC-0993,risk,champion_left,none,0.95,llm_template,"Champion gone, vendor review under way."
+ACC-0994,neutral,none,none,0.85,llm_template,Flat budget is not a cut; happy. No expansion.
+ACC-0995,neutral,none,none,0.95,llm_template,Renewal confirmed at current level.
+ACC-0996,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0997,neutral,none,none,0.95,llm_template,Satisfied; explicitly no change.
+ACC-0998,growth,none,seats,0.95,llm_template,Multi-year plus expanded seats.
+ACC-0999,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
+ACC-1000,growth,none,none,0.7,llm_template,"Strategic positioning without a concrete ask; growth intent, type unknown."
