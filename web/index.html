@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f0e6; --paper-2:#ece5d6; --ink:#1d1b17; --ink-2:#4f4a40; --ink-3:#8a8275; --rule:#d9d0bf;
+  --save:#8a2b1e; --save-soft:#f3dcd6; --grow:#2f6b3a; --grow-soft:#dbe9d8;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif; --sans:"Instrument Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box} html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.45}
+body{background-image:radial-gradient(ellipse at 20% -10%,#fff8ea 0,transparent 55%),radial-gradient(ellipse at 100% 0,#efe4cf 0,transparent 45%)}
+a{color:inherit}
+.wrap{max-width:1360px;margin:0 auto;padding:28px 36px 80px}
+
+/* masthead */
+.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;border-bottom:2px solid var(--ink);padding-bottom:14px;animation:rise .6s ease both}
+.mast h1{font-family:var(--serif);font-weight:400;font-size:44px;letter-spacing:-.01em;margin:0;line-height:1}
+.mast h1 em{font-style:italic;font-weight:300;color:var(--ink-2)}
+.mast .date{font-family:var(--serif);font-style:italic;color:var(--ink-3);font-size:17px;margin-top:6px}
+.filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.filters label{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-3);margin-right:-4px}
+select{appearance:none;background:transparent;border:1px solid var(--rule);border-radius:999px;padding:7px 30px 7px 14px;font:inherit;color:var(--ink);cursor:pointer;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%238a8275'/></svg>");background-repeat:no-repeat;background-position:right 12px center}
+select:hover{border-color:var(--ink-3)}
+
+/* kpi sentence */
+.lede{font-family:var(--serif);font-size:22px;font-weight:300;line-height:1.35;margin:22px 0 30px;max-width:980px;color:var(--ink-2);animation:rise .6s .1s ease both}
+.lede b{font-weight:600;color:var(--ink)} .lede .s{color:var(--save)} .lede .g{color:var(--grow)}
+
+/* two columns */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media (max-width:980px){.cols{grid-template-columns:1fr}}
+.col h2{font-family:var(--serif);font-weight:500;font-size:28px;margin:0;display:flex;align-items:baseline;gap:12px;animation:rise .6s .15s ease both}
+.col h2 small{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.col .how{color:var(--ink-3);font-size:13px;margin:6px 0 14px;animation:rise .6s .2s ease both}
+.col.save h2{color:var(--save)} .col.grow h2{color:var(--grow)}
+.col .bar{height:3px;background:currentColor;opacity:.9;margin-bottom:2px}
+.col.save .bar{color:var(--save)} .col.grow .bar{color:var(--grow)}
+
+/* rows */
+.row{display:grid;grid-template-columns:34px 1fr 74px;gap:16px;padding:16px 8px 16px 0;border-bottom:1px solid var(--rule);cursor:pointer;position:relative;
+  animation:rise .5s ease both;transition:background .15s}
+.row:hover{background:rgba(255,255,255,.45)}
+.row:hover .name{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.row .n{font-family:var(--serif);font-size:20px;color:var(--ink-3);font-weight:300;padding-top:2px}
+.row .name{font-family:var(--serif);font-size:19px;font-weight:500;line-height:1.15}
+.row .meta{color:var(--ink-3);font-size:12.5px;margin-top:3px}
+.row .meta b{color:var(--ink-2);font-weight:600}
+.row .why{margin-top:7px;color:var(--ink-2);font-size:14px;line-height:1.4}
+.row .score{font-family:var(--serif);font-size:38px;font-weight:300;text-align:right;line-height:1;padding-top:2px}
+.save .row .score{color:var(--save)} .grow .row .score{color:var(--grow)}
+.row .nobrief{position:absolute;right:0;bottom:8px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.empty{padding:28px 0;color:var(--ink-3);font-style:italic;font-family:var(--serif);font-size:17px}
+
+/* rest */
+details.rest{margin-top:40px;border-top:1px solid var(--rule);padding-top:12px}
+details.rest summary{cursor:pointer;color:var(--ink-3);font-size:13px;letter-spacing:.08em;text-transform:uppercase;list-style:none}
+details.rest summary::before{content:"+ ";} details.rest[open] summary::before{content:"− ";}
+table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13.5px} th{font-weight:500;color:var(--ink-3);text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--paper-2)} td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.clk{cursor:pointer} tr.clk:hover td{background:rgba(255,255,255,.5)}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(29,27,23,.35);opacity:0;pointer-events:none;transition:opacity .25s;z-index:10}
+.drawer{position:fixed;top:0;right:0;height:100vh;width:min(640px,100vw);background:var(--paper);border-left:1px solid var(--rule);box-shadow:-30px 0 60px rgba(29,27,23,.18);
+  transform:translateX(102%);transition:transform .32s cubic-bezier(.2,.8,.2,1);z-index:11;overflow-y:auto;padding:28px 34px 60px}
+body.open .scrim{opacity:1;pointer-events:auto} body.open .drawer{transform:none}
+.drawer .close{position:sticky;top:0;float:right;background:var(--paper);border:1px solid var(--rule);border-radius:999px;width:34px;height:34px;cursor:pointer;font-size:18px;line-height:1;color:var(--ink-2)}
+.drawer .close:hover{border-color:var(--ink)}
+.tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;font-weight:600}
+.tag.risk{background:var(--save-soft);color:var(--save)} .tag.opportunity{background:var(--grow-soft);color:var(--grow)} .tag.watch,.tag.healthy{background:var(--paper-2);color:var(--ink-2)}
+.drawer h2{font-family:var(--serif);font-weight:500;font-size:34px;margin:14px 0 4px;line-height:1.05}
+.drawer .desc{color:var(--ink-2);margin:0 0 18px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 26px}
+.stat{border-top:1px solid var(--ink);padding-top:8px} .stat small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.stat span{font-family:var(--serif);font-size:26px;font-weight:300} .stat.s span{color:var(--save)} .stat.g span{color:var(--grow)}
+.drawer h3{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:26px 0 10px;font-weight:600}
+.drawer ul{margin:0;padding-left:18px} .drawer li{margin:5px 0}
+.brief{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:22px 24px;margin-top:6px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.brief .sit{font-family:var(--serif);font-size:18px;line-height:1.45;margin:0 0 14px}
+.brief .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brief h4{margin:0 0 6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.brief h4.s{color:var(--save)} .brief h4.g{color:var(--grow)}
+.brief ol{padding-left:20px;margin:4px 0} .brief li{margin:6px 0;font-size:14.5px}
+.next{margin-top:16px;padding:12px 14px;border-left:3px solid var(--ink);background:var(--paper);font-weight:500}
+.unk{margin-top:14px;color:var(--ink-2);font-size:14px}
+.brief .src{color:var(--ink-3);font-size:12px;margin-top:14px;font-style:italic}
+.facts dl{display:grid;grid-template-columns:200px 1fr;gap:6px 14px;margin:0;font-size:14px} .facts dt{color:var(--ink-3)} .facts dd{margin:0}
+details.prompt{margin-top:22px} details.prompt summary{cursor:pointer;color:var(--ink-3);font-size:13px}
+pre{white-space:pre-wrap;font-size:12px;line-height:1.45;background:#fff;border:1px solid var(--rule);padding:14px;border-radius:6px;max-height:420px;overflow:auto}
+.btn{font:inherit;font-size:13px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:999px;cursor:pointer}
+.btn[disabled]{opacity:.45;cursor:not-allowed} .btn.ghost{background:transparent;color:var(--ink)}
+.warn{border:1px dashed var(--ink-3);padding:14px;border-radius:6px;color:var(--ink-2);font-size:14px}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <h1>Account <em>Intelligence</em></h1>
+      <div class="date" id="date"></div>
+    </div>
+    <div class="filters" id="filters">
+      <label>My book</label>
+      <select id="f-segment"><option value="">All segments</option></select>
+      <select id="f-region"><option value="">All regions</option></select>
+      <select id="f-industry"><option value="">All industries</option></select>
+    </div>
+  </header>
+
+  <p class="lede" id="lede">Loading your book…</p>
+
+  <section class="cols">
+    <div class="col save">
+      <div class="bar"></div>
+      <h2>To save <small id="save-count"></small></h2>
+      <p class="how">Accounts showing trouble. The number is the <b>risk score</b> (0–100): how much evidence there is that something is wrong. Every point comes from a rule you can read in the brief.</p>
+      <div id="save-list"></div>
+    </div>
+    <div class="col grow">
+      <div class="bar"></div>
+      <h2>Ready to grow <small id="grow-count"></small></h2>
+      <p class="how">Accounts asking for more. The number is the <b>opportunity score</b> (0–100): how much evidence there is that they want to buy.</p>
+      <div id="grow-list"></div>
+    </div>
+  </section>
+
+  <details class="rest"><summary id="rest-sum">Everything else in my book</summary><div id="rest"></div></details>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-live="polite"></aside>
+
+<script>
+const $ = s => document.querySelector(s);
+const money = x => x >= 1e6 ? `$${(x/1e6).toFixed(1)}M` : `$${Math.round(x/1e3)}K`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('#date').textContent = new Date().toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+
+const state = {segment:'', region:'', industry:''};
+let filtersFilled = false;
+
+async function loadFocus(){
+  const q = new URLSearchParams(Object.fromEntries(Object.entries(state).filter(([,v]) => v)));
+  const d = await (await fetch('/api/focus?' + q)).json();
+  if(!filtersFilled){
+    for(const k of ['segment','region','industry']){
+      const sel = $('#f-' + k);
+      d.filters[k].forEach(v => sel.insertAdjacentHTML('beforeend', `<option>${esc(v)}</option>`));
+      sel.onchange = () => { state[k] = sel.value; loadFocus(); };
+    }
+    filtersFilled = true;
+  }
+  const k = d.kpis;
+  $('#lede').innerHTML = `<b>${k.book.toLocaleString()}</b> accounts in my book. <b class="s">${k.save_count}</b> show trouble, worth <b>${money(k.save_revenue)}</b> a year. <b class="g">${k.grow_count}</b> are ready to grow. <b>${k.renewals_45d}</b> of them renew within 45 days.`;
+  $('#save-count').textContent = `top ${d.save.length} of ${k.save_count}`;
+  $('#grow-count').textContent = `top ${d.grow.length} of ${k.grow_count}`;
+  $('#save-list').innerHTML = d.save.length ? d.save.map(rowHTML).join('') : '<p class="empty">Nothing in trouble here. Enjoy your coffee.</p>';
+  $('#grow-list').innerHTML = d.grow.length ? d.grow.map(rowHTML).join('') : '<p class="empty">No expansion signals in this slice.</p>';
+  $('#rest-sum').textContent = `Everything else in my book (${d.rest.length} accounts with no strong signal)`;
+  $('#rest').innerHTML = `<table><thead><tr><th>Account</th><th>Segment</th><th>Region</th><th>Status</th><th class="num">Risk</th><th class="num">Opportunity</th><th class="num">Renews in</th><th class="num">ARR</th></tr></thead><tbody>` +
+    d.rest.map(r => `<tr class="clk" data-id="${r.account_id}"><td>${esc(r.name)}</td><td>${r.segment}</td><td>${r.region}</td><td>${r.status}</td><td class="num">${r.risk}</td><td class="num">${r.opportunity}</td><td class="num">${r.renews_in} d</td><td class="num">${money(r.revenue)}</td></tr>`).join('') + '</tbody></table>';
+  document.querySelectorAll('[data-id]').forEach(el => el.onclick = () => openAccount(el.dataset.id));
+}
+
+function rowHTML(r, i){
+  return `<div class="row" data-id="${r.account_id}" style="animation-delay:${0.2 + i*0.04}s">
+    <div class="n">${i+1}</div>
+    <div>
+      <div class="name">${esc(r.name)}</div>
+      <div class="meta">${r.segment} · ${r.region} · ${r.industry} · <b>${money(r.revenue)}</b> · renews in <b>${r.renews_in} days</b></div>
+      <div class="why">${esc(r.why)}</div>
+    </div>
+    <div class="score">${r.score}</div>
+    ${r.has_brief ? '' : '<div class="nobrief">prompt only</div>'}
+  </div>`;
+}
+
+async function openAccount(id){
+  const a = await (await fetch('/api/accounts/' + id)).json();
+  $('#drawer').innerHTML = drawerHTML(a);
+  document.body.classList.add('open');
+  $('#drawer').scrollTop = 0;
+  $('#close').onclick = closeDrawer;
+  const gen = $('#gen'); if(gen) gen.onclick = () => regenerate(id);
+}
+function closeDrawer(){ document.body.classList.remove('open'); }
+$('#scrim').onclick = closeDrawer;
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeDrawer(); });
+
+function briefHTML(b, meta){
+  const li = xs => xs.length ? xs.map(x => `<li>${esc(x)}</li>`).join('') : '<li><i>None identified.</i></li>';
+  return `<div class="brief">
+    <p class="sit">${esc(b.situation)}</p>
+    <div class="two"><div><h4 class="s">Risks</h4><ul>${li(b.risks)}</ul></div><div><h4 class="g">Opportunities</h4><ul>${li(b.opportunities)}</ul></div></div>
+    <h4 style="margin-top:16px">Talking points</h4><ol>${b.talking_points.map(x => `<li>${esc(x)}</li>`).join('')}</ol>
+    <div class="next">Next action — ${esc(b.next_action)}</div>
+    <div class="unk"><h4>What the data can't tell us · ask in the meeting</h4><ul>${li(b.unknowns)}</ul></div>
+    ${meta ? `<div class="src">Written by ${esc(meta.generator)} on ${meta.generated_on}, from the context card below. Every claim traces to a line in it.</div>` : ''}
+  </div>`;
+}
+
+function drawerHTML(a){
+  return `<button class="close" id="close" aria-label="Close">×</button>
+    <span class="tag ${a.focus}">${a.action}</span>
+    <h2>${esc(a.name)}</h2>
+    <p class="desc">${esc(a.description)}<br><span style="color:var(--ink-3)">${a.industry} · ${a.segment} · ${a.region} · ${a.employees.toLocaleString()} employees</span></p>
+    <div class="stats">
+      <div class="stat s"><small>Risk score</small><span>${a.risk_score}</span></div>
+      <div class="stat g"><small>Opportunity</small><span>${a.opportunity_score}</span></div>
+      <div class="stat"><small>Renews in</small><span>${a.renews_in}<sub style="font-size:12px"> days</sub></span></div>
+      <div class="stat"><small>Annual revenue</small><span>${money(a.revenue)}</span></div>
+    </div>
+
+    <h3>Meeting brief</h3>
+    <div id="brief-box">${a.brief ? briefHTML(a.brief, a.brief_meta) : `<div class="warn">No pre-generated brief for this account. The prompt below is exactly what the model would receive — paste it into any LLM, or run a local model (see README) and press regenerate.</div>`}</div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+      <button class="btn ghost" id="gen">Regenerate with local model</button>
+      <span id="gen-msg" style="color:var(--ink-3);font-size:12.5px"></span>
+    </div>
+
+    <h3>Why it's on the list</h3>
+    ${a.risk_reasons.length ? `<b style="color:var(--save);font-size:13px">Trouble signals</b><ul>${a.risk_reasons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+    ${a.opportunity_reasons.length ? `<b style="color:var(--grow);font-size:13px">Growth signals</b><ul>${a.opportunity_reasons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+    ${!a.risk_reasons.length && !a.opportunity_reasons.length ? '<p>No strong signals either way.</p>' : ''}
+
+    <h3>The facts</h3>
+    <div class="facts"><dl>${Object.entries(a.facts).map(([k,v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></div>
+
+    <details class="prompt"><summary>Prompt and context card sent to the model</summary><pre>${esc(a.prompt)}</pre></details>`;
+}
+
+async function regenerate(id){
+  const btn = $('#gen'), msg = $('#gen-msg');
+  btn.disabled = true; msg.textContent = 'Asking the local model…';
+  try{
+    const r = await fetch(`/api/accounts/${id}/brief`, {method:'POST'});
+    const d = await r.json();
+    if(!r.ok) throw new Error(d.detail || r.statusText);
+    $('#brief-box').innerHTML = briefHTML(d.brief, {generator: d.source, generated_on: 'just now'});
+    msg.textContent = '';
+  }catch(e){ msg.textContent = e.message; }
+  btn.disabled = false;
+}
+
+loadFocus();
+</script>
+</body>
+</html>
