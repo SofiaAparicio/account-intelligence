@@ -95,15 +95,29 @@ data cannot tell us; it doubles as the AE's question list for the meeting.
 
 ## UI
 
-### 12. Two screens, no dashboard
-*Today's focus* (filters, KPI strip, ranked table with score chips and
-reason codes) and *Meeting brief* (facts, score breakdown, brief, prompt).
-The brief asks for prioritised accounts and the insight, graded on AE
-usability. Portfolio charts answer a manager's question, not the AE's.
+### 12. One page, two lists, no dashboard
+A summary sentence, then two tabs, *To save* and *Ready to grow*, each a
+ranked list with a one-line reason per account; clicking opens the meeting
+brief in a drawer. The brief asks for prioritised accounts and the insight,
+graded on AE usability. Portfolio charts answer a manager's question, not
+the AE's. Rejected along the way: one mixed table sorted by priority (the
+AE had to read the colour of every row to know what kind of work it was),
+and two columns side by side (rows too dense, and the second list fell
+below the fold on smaller screens).
+
+### 12b. Lists are ordered by priority, and the score is defined on the page
+Sorting by raw score produced a wall of 100s (it caps), so lists follow
+priority (#6) and the score varies again. A "signals fired" dot indicator
+was tried and dropped: users could not tell what a "signal" was. The list
+now shows the 0–100 score with a small meter, and each tab opens with a
+one-sentence definition of the score and the threshold for being on the list.
 
 ### 13. Filters stand in for the AE's book of business
 Segment / region / industry filters let the demo say "I'm the EMEA
 Mid-Market AE". Rejected: inventing an `owner` column (fabricated data).
 
-### 14. Streamlit
-One language, runnable from the README with one command.
+### 14. FastAPI + one static HTML page (Streamlit rejected)
+Started on Streamlit for speed; replaced it once layout control mattered
+(the second list sat below the fold and the widgets fought the content).
+`api.py` exposes two JSON routes; `web/index.html` is vanilla JS with no
+build step, so it still runs from the README with one command.

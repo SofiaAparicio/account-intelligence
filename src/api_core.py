@@ -13,6 +13,7 @@ from .insights import build_prompt, get_brief, segment_medians
 from .scoring import OPP_FOCUS, RISK_FOCUS, score_accounts
 
 TOP_N = 10
+SIGNALS_TOTAL = 5  # four numeric rules + the call transcript label
 
 
 @lru_cache(maxsize=1)
@@ -22,7 +23,8 @@ def scored() -> pd.DataFrame:
 
 def _one_liner(row: pd.Series, kind: str) -> str:
     reasons = row["risk_reasons"] if kind == "risk" else row["opportunity_reasons"]
-    bits = [r[0].lower() + r[1:] for r in reasons[:3]]
+    # Lower-case the first letter unless it starts an acronym ("AI feature…")
+    bits = [r if (len(r) > 1 and r[1].isupper()) else r[0].lower() + r[1:] for r in reasons[:3]]
     text = "; ".join(bits).replace("last call: ", "last call mentioned ")
     return (text[0].upper() + text[1:]) if text else "No strong signals"
 
@@ -37,6 +39,9 @@ def _row(row: pd.Series, kind: str) -> dict:
         "revenue": float(row["current_revenue"]),
         "renews_in": int(row["days_to_next_renewal"]),
         "score": int(row["risk_score"] if kind == "risk" else row["opportunity_score"]),
+        "signals": len(row["risk_reasons"] if kind == "risk" else row["opportunity_reasons"]),
+        "signals_total": SIGNALS_TOTAL,
+        "priority": float(row["priority_score"]),
         "why": _one_liner(row, kind),
         "has_brief": get_brief(row["account_id"]) is not None,
     }
@@ -57,8 +62,10 @@ def focus_payload(segment: str | None = None, region: str | None = None, industr
     """Everything the Today's-focus page needs in one call."""
     all_ = scored()
     book = apply_filters(all_, segment, region, industry)
-    save = book[book["focus"] == "risk"].sort_values(["risk_score", "priority_score"], ascending=False)
-    grow = book[book["focus"] == "opportunity"].sort_values(["opportunity_score", "priority_score"], ascending=False)
+    # Order by priority (score x urgency x value), per docs/decisions.md #6.
+    # Sorting by raw score alone pins every capped-at-100 account to the top.
+    save = book[book["focus"] == "risk"].sort_values(["priority_score", "risk_score"], ascending=False)
+    grow = book[book["focus"] == "opportunity"].sort_values(["priority_score", "opportunity_score"], ascending=False)
     rest = book[~book["focus"].isin(["risk", "opportunity"])]
     return {
         "filters": {
