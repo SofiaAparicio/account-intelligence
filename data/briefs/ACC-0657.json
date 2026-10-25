@@ -1,0 +1,27 @@
+{
+  "account_id": "ACC-0657",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Zeta Brain Works is a $1.1M Enterprise Education account in NA with 63 days to renewal, and we have no recent call summary on file. The numbers are worrying: 149 days since any sales activity (the longest silence in the segment), 44% of 571 seats in use, 6 open tickets and AI adoption 0.17.",
+    "risks": [
+      "149 days without sales contact (P100) and no call summary: we are flying blind on a $1.1M renewal.",
+      "44% seat utilisation (P16) and 6 open tickets (P81).",
+      "AI adoption 0.17 (P28)."
+    ],
+    "opportunities": [],
+    "talking_points": [
+      "Open with a discovery conversation, not a pitch: what has changed in the last five months?",
+      "Ask about the 6 open tickets and whether support has been responsive.",
+      "Explore what the 249 active users value, to anchor the renewal."
+    ],
+    "next_action": "Today: schedule a re-engagement call this week; there are 63 days to renewal and no current intelligence on the account.",
+    "unknowns": [
+      "Who the current stakeholders are and whether our contacts are still there.",
+      "Why contact stopped 149 days ago.",
+      "Whether the 6 tickets are recent or long-standing."
+    ]
+  },
+  "context_card": "Account: Zeta Brain Works (ACC-0657)\nWhat they do: Operates an online learning platform offering professional certification courses.\nIndustry: Education | Segment: Enterprise | Region: NA | Employees: 36,965\n\nCommercials\n- Current annual revenue: $1,098,235 (P55 within Enterprise)\n- Days to renewal: 63\n- Licensed seats: 571 | Active users: 249 | Seat utilisation: 44% (P16 within segment)\n\nEngagement and health\n- Days since last sales activity: 149 (P100 within segment; higher = longer silence)\n- Open support tickets: 6 (P81)\n- AI feature adoption: 0.17 (P28)\n\nLast sales call\n- Summary: NO CALL SUMMARY ON FILE\n- Labelled intent: none | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 78/100: No sales touch in 149 days; Only 44% of licensed seats in use; AI feature adoption low (0.17); 6 open support tickets; No recent call summary on file\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 143.3 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Zeta Brain Works (ACC-0657)\nWhat they do: Operates an online learning platform offering professional certification courses.\nIndustry: Education | Segment: Enterprise | Region: NA | Employees: 36,965\n\nCommercials\n- Current annual revenue: $1,098,235 (P55 within Enterprise)\n- Days to renewal: 63\n- Licensed seats: 571 | Active users: 249 | Seat utilisation: 44% (P16 within segment)\n\nEngagement and health\n- Days since last sales activity: 149 (P100 within segment; higher = longer silence)\n- Open support tickets: 6 (P81)\n- AI feature adoption: 0.17 (P28)\n\nLast sales call\n- Summary: NO CALL SUMMARY ON FILE\n- Labelled intent: none | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 78/100: No sales touch in 149 days; Only 44% of licensed seats in use; AI feature adoption low (0.17); 6 open support tickets; No recent call summary on file\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 143.3 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

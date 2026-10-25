@@ -1,0 +1,28 @@
+{
+  "account_id": "ACC-0269",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Orbit Build HQ is a $1.16M Enterprise Manufacturing account in NA with 71 days to renewal. Our champion, the Head of Operations, has left; new leadership is reviewing all vendor contracts. Usage is weak (44% of 901 seats, AI adoption 0.01) and 8 tickets are open.",
+    "risks": [
+      "Champion gone and a vendor review under way: we currently have no sponsor in a decision that is already happening.",
+      "44% seat utilisation (P17) and AI adoption 0.01 give the reviewers little evidence of value.",
+      "8 open tickets (P93) and 85 days since last sales touch."
+    ],
+    "opportunities": [
+      "71 days is enough to build a new relationship if we move this week."
+    ],
+    "talking_points": [
+      "Identify the new decision-maker and request an introduction, framed as a vendor review briefing.",
+      "Prepare a one-page value summary from the 393 active users' usage, and a plan for the idle seats.",
+      "Clear or escalate the 8 open tickets before the review so support is not the headline."
+    ],
+    "next_action": "This week: map the new leadership and secure a meeting with whoever owns the vendor review; brief support on the 8 tickets today.",
+    "unknowns": [
+      "Who replaced the Head of Operations and what is the review timeline?",
+      "Did our champion leave any internal documentation of the value delivered?"
+    ]
+  },
+  "context_card": "Account: Orbit Build HQ (ACC-0269)\nWhat they do: Produces precision-machined components for the aerospace and defense industry.\nIndustry: Manufacturing | Segment: Enterprise | Region: NA | Employees: 44,865\n\nCommercials\n- Current annual revenue: $1,161,272 (P57 within Enterprise)\n- Days to renewal: 71\n- Licensed seats: 901 | Active users: 393 | Seat utilisation: 44% (P17 within segment)\n\nEngagement and health\n- Days since last sales activity: 85 (P77 within segment; higher = longer silence)\n- Open support tickets: 8 (P93)\n- AI feature adoption: 0.01 (P18)\n\nLast sales call\n- Summary: Champion Head of Operations has left the company. New leadership is reviewing all vendor contracts including ours.\n- Labelled intent: risk | risk type: champion_left | expansion type: none\n\nScores (rule-based, see README)\n- Risk 81/100: Only 44% of licensed seats in use; Last call: champion left, leadership reviewing vendors; AI feature adoption very low (0.01); 8 open support tickets; No sales touch in 85 days\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 149.7 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Orbit Build HQ (ACC-0269)\nWhat they do: Produces precision-machined components for the aerospace and defense industry.\nIndustry: Manufacturing | Segment: Enterprise | Region: NA | Employees: 44,865\n\nCommercials\n- Current annual revenue: $1,161,272 (P57 within Enterprise)\n- Days to renewal: 71\n- Licensed seats: 901 | Active users: 393 | Seat utilisation: 44% (P17 within segment)\n\nEngagement and health\n- Days since last sales activity: 85 (P77 within segment; higher = longer silence)\n- Open support tickets: 8 (P93)\n- AI feature adoption: 0.01 (P18)\n\nLast sales call\n- Summary: Champion Head of Operations has left the company. New leadership is reviewing all vendor contracts including ours.\n- Labelled intent: risk | risk type: champion_left | expansion type: none\n\nScores (rule-based, see README)\n- Risk 81/100: Only 44% of licensed seats in use; Last call: champion left, leadership reviewing vendors; AI feature adoption very low (0.01); 8 open support tickets; No sales touch in 85 days\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 149.7 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

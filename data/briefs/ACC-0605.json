@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0605",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Kova Edu Networks is a $1.62M Enterprise Education account in EMEA with 171 days to renewal, running at 86% of 1,788 seats, zero tickets and the segment's highest AI adoption (0.85). They are consolidating on our platform, replacing Outreach, with 486+ seats expected.",
+    "risks": [],
+    "opportunities": [
+      "Consolidation in our favour with 486+ seats expected, confirmed 15 days ago.",
+      "86% utilisation (P95) and AI adoption 0.85 (P99): the strongest usage profile in the segment.",
+      "0 open support tickets alongside 1,546 active users."
+    ],
+    "talking_points": [
+      "Confirm the Outreach migration plan and the 486+ seat figure.",
+      "Propose a multi-year agreement given the strategic consolidation.",
+      "Ask what would make the migration frictionless for their teams."
+    ],
+    "next_action": "Within 2 weeks: send a consolidation proposal for 486+ seats; renewal is 171 days out so this can be a standalone expansion.",
+    "unknowns": [
+      "Migration timeline from Outreach.",
+      "Whether procurement prefers a mid-term expansion or alignment with renewal."
+    ]
+  },
+  "context_card": "Account: Kova Edu Networks (ACC-0605)\nWhat they do: Develops AI-powered tutoring assistants for STEM subjects.\nIndustry: Education | Segment: Enterprise | Region: EMEA | Employees: 34,267\n\nCommercials\n- Current annual revenue: $1,620,855 (P82 within Enterprise)\n- Days to renewal: 171\n- Licensed seats: 1,788 | Active users: 1,546 | Seat utilisation: 86% (P95 within segment)\n\nEngagement and health\n- Days since last sales activity: 15 (P13 within segment; higher = longer silence)\n- Open support tickets: 0 (P5)\n- AI feature adoption: 0.85 (P99)\n\nLast sales call\n- Summary: Client is consolidating on our platform, replacing Outreach. Expected to add 486+ seats.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 0/100: no risk signals\n- Opportunity 96/100: 86% of seats in use, near seat cap; Very strong AI feature adoption (0.85); Last call: asked about additional seats; Recent conversation (15 days since last touch); No open support tickets\n- Focus: opportunity | Priority 141.1 (urgency x1.0)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Kova Edu Networks (ACC-0605)\nWhat they do: Develops AI-powered tutoring assistants for STEM subjects.\nIndustry: Education | Segment: Enterprise | Region: EMEA | Employees: 34,267\n\nCommercials\n- Current annual revenue: $1,620,855 (P82 within Enterprise)\n- Days to renewal: 171\n- Licensed seats: 1,788 | Active users: 1,546 | Seat utilisation: 86% (P95 within segment)\n\nEngagement and health\n- Days since last sales activity: 15 (P13 within segment; higher = longer silence)\n- Open support tickets: 0 (P5)\n- AI feature adoption: 0.85 (P99)\n\nLast sales call\n- Summary: Client is consolidating on our platform, replacing Outreach. Expected to add 486+ seats.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 0/100: no risk signals\n- Opportunity 96/100: 86% of seats in use, near seat cap; Very strong AI feature adoption (0.85); Last call: asked about additional seats; Recent conversation (15 days since last touch); No open support tickets\n- Focus: opportunity | Priority 141.1 (urgency x1.0)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

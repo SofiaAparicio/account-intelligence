@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0263",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Helix Wealth Global is a $557K Enterprise Finance account in NA renewing in 33 days, with 1,549 seats at 77% utilisation and very strong AI adoption (0.73). On the latest call (today) the CMO asked about enterprise pricing tiers and plans to double usage in customer success.",
+    "risks": [],
+    "opportunities": [
+      "Stated plan to double usage in customer success, with a direct question about enterprise pricing tiers.",
+      "77% of 1,549 seats in use (P84) and AI adoption at P95: usage supports a materially larger contract.",
+      "Renewal in 33 days gives a natural moment to restructure the deal."
+    ],
+    "talking_points": [
+      "Walk the CMO through the enterprise tier and model the doubling scenario in concrete seat and price terms.",
+      "Ask which customer success workflows they want to extend, to confirm the seat count and timing.",
+      "Propose aligning the expanded agreement with the renewal date to simplify procurement."
+    ],
+    "next_action": "Within 3 business days: send an enterprise-tier proposal with a doubled-usage scenario, ahead of the renewal in 33 days.",
+    "unknowns": [
+      "Is the doubling planned for this quarter or over the year?",
+      "Who else beyond the CMO signs off on an enterprise-tier change?"
+    ]
+  },
+  "context_card": "Account: Helix Wealth Global (ACC-0263)\nWhat they do: Provides algorithmic trading platforms for institutional asset managers.\nIndustry: Finance | Segment: Enterprise | Region: NA | Employees: 47,677\n\nCommercials\n- Current annual revenue: $557,412 (P23 within Enterprise)\n- Days to renewal: 33\n- Licensed seats: 1,549 | Active users: 1,186 | Seat utilisation: 77% (P84 within segment)\n\nEngagement and health\n- Days since last sales activity: 0 (P2 within segment; higher = longer silence)\n- Open support tickets: 3 (P46)\n- AI feature adoption: 0.73 (P95)\n\nLast sales call\n- Summary: CMO asked about enterprise pricing tiers. They're planning to double their usage in customer success.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 6/100: no risk signals\n- Opportunity 93/100: 77% of seats in use, near seat cap; Very strong AI feature adoption (0.73); Last call: asked about additional seats; Active conversation (0 days since last touch)\n- Focus: opportunity | Priority 183.4 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Helix Wealth Global (ACC-0263)\nWhat they do: Provides algorithmic trading platforms for institutional asset managers.\nIndustry: Finance | Segment: Enterprise | Region: NA | Employees: 47,677\n\nCommercials\n- Current annual revenue: $557,412 (P23 within Enterprise)\n- Days to renewal: 33\n- Licensed seats: 1,549 | Active users: 1,186 | Seat utilisation: 77% (P84 within segment)\n\nEngagement and health\n- Days since last sales activity: 0 (P2 within segment; higher = longer silence)\n- Open support tickets: 3 (P46)\n- AI feature adoption: 0.73 (P95)\n\nLast sales call\n- Summary: CMO asked about enterprise pricing tiers. They're planning to double their usage in customer success.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 6/100: no risk signals\n- Opportunity 93/100: 77% of seats in use, near seat cap; Very strong AI feature adoption (0.73); Last call: asked about additional seats; Active conversation (0 days since last touch)\n- Focus: opportunity | Priority 183.4 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

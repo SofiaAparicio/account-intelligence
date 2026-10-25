@@ -1,0 +1,29 @@
+{
+  "account_id": "ACC-0016",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Rapid Campus Ventures is our largest Enterprise Education account ($1.96M, P99) in NA, renewing in 40 days. The annual review was positive but flat ('values the automation engine, not looking to grow'), while the health signals are mixed: 10 open tickets, AI adoption 0.00, 48% of 622 seats in use and 71 days since sales contact.",
+    "risks": [
+      "10 open tickets (P96) on a $1.96M account 40 days from renewal.",
+      "AI adoption 0.00 and 48% utilisation: paying for a lot they do not use.",
+      "71 days since last sales touch."
+    ],
+    "opportunities": [
+      "They value the automation engine: a clear anchor for the renewal conversation.",
+      "AI adoption at zero is also unexplored value for the 299 active users."
+    ],
+    "talking_points": [
+      "Lead with the automation engine value they cited, then address the 10 open tickets explicitly.",
+      "Offer an AI-feature enablement session as a no-cost way to increase value before renewal.",
+      "Ask whether the 323 unused seats should be kept, reallocated or right-sized."
+    ],
+    "next_action": "This week: triage the 10 tickets with support and schedule a renewal check-in that includes an enablement offer.",
+    "unknowns": [
+      "Whether the tickets are known to the person who ran the annual review.",
+      "Whether 'not looking to grow' also means they are looking to shrink."
+    ]
+  },
+  "context_card": "Account: Rapid Campus Ventures (ACC-0016)\nWhat they do: Runs a coding bootcamp with both in-person and remote cohort programs.\nIndustry: Education | Segment: Enterprise | Region: NA | Employees: 27,178\n\nCommercials\n- Current annual revenue: $1,962,024 (P99 within Enterprise)\n- Days to renewal: 40\n- Licensed seats: 622 | Active users: 299 | Seat utilisation: 48% (P25 within segment)\n\nEngagement and health\n- Days since last sales activity: 71 (P64 within segment; higher = longer silence)\n- Open support tickets: 10 (P96)\n- AI feature adoption: 0.00 (P8)\n\nLast sales call\n- Summary: Annual review meeting. The account values automation engine but isn't looking to grow usage right now.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 57/100: 10 open support tickets; AI feature adoption very low (0.00); No sales touch in 71 days; 48% of licensed seats in use\n- Opportunity 5/100: no growth signals\n- Focus: watch | Priority 128.1 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Rapid Campus Ventures (ACC-0016)\nWhat they do: Runs a coding bootcamp with both in-person and remote cohort programs.\nIndustry: Education | Segment: Enterprise | Region: NA | Employees: 27,178\n\nCommercials\n- Current annual revenue: $1,962,024 (P99 within Enterprise)\n- Days to renewal: 40\n- Licensed seats: 622 | Active users: 299 | Seat utilisation: 48% (P25 within segment)\n\nEngagement and health\n- Days since last sales activity: 71 (P64 within segment; higher = longer silence)\n- Open support tickets: 10 (P96)\n- AI feature adoption: 0.00 (P8)\n\nLast sales call\n- Summary: Annual review meeting. The account values automation engine but isn't looking to grow usage right now.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 57/100: 10 open support tickets; AI feature adoption very low (0.00); No sales touch in 71 days; 48% of licensed seats in use\n- Opportunity 5/100: no growth signals\n- Focus: watch | Priority 128.1 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0946",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Onyx Logic Inc is a $97K Mid-Market Technology account in EMEA (P97 by revenue in its segment) renewing in 43 days. They said they are moving to an in-house solution built by their HR team; usage is weak (43% of 150 seats, AI adoption 0.18), 8 tickets are open and we have had no contact for 96 days.",
+    "risks": [
+      "Stated move to an in-house solution with renewal 43 days away.",
+      "8 open tickets (P87) and 96 days since last sales contact.",
+      "43% seat utilisation (P22) and low AI adoption."
+    ],
+    "opportunities": [],
+    "talking_points": [
+      "Ask what the in-house solution covers and what it does not; find the gap we still fill.",
+      "Clear the 8 tickets quickly to remove the obvious grievance.",
+      "Offer a right-sized renewal for the 64 active users as an alternative to full churn."
+    ],
+    "next_action": "This week: reach the decision-maker to understand the in-house plan and propose a reduced-scope renewal if a full save is unrealistic.",
+    "unknowns": [
+      "How far along the in-house build is.",
+      "Whether the HR team's solution is intended for the whole company."
+    ]
+  },
+  "context_card": "Account: Onyx Logic Inc (ACC-0946)\nWhat they do: Provides AI-powered cybersecurity monitoring for mid-size companies.\nIndustry: Technology | Segment: Mid-Market | Region: EMEA | Employees: 412\n\nCommercials\n- Current annual revenue: $96,977 (P97 within Mid-Market)\n- Days to renewal: 43\n- Licensed seats: 150 | Active users: 64 | Seat utilisation: 43% (P22 within segment)\n\nEngagement and health\n- Days since last sales activity: 96 (P81 within segment; higher = longer silence)\n- Open support tickets: 8 (P87)\n- AI feature adoption: 0.18 (P34)\n\nLast sales call\n- Summary: Client mentioned they're moving to an in-house solution built by their HR team.\n- Labelled intent: risk | risk type: consolidation | expansion type: none\n\nScores (rule-based, see README)\n- Risk 87/100: No sales touch in 96 days; Only 43% of licensed seats in use; Last call: merger or move to in-house tool; 8 open support tickets; AI feature adoption low (0.18)\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 138.4 (urgency x1.5)\n\nSegment medians (Mid-Market)\n- seat utilisation: 59%\n- AI feature adoption: 0.31\n- days since last sales activity: 63\n- open support tickets: 4\n- annual revenue: $59,038",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Onyx Logic Inc (ACC-0946)\nWhat they do: Provides AI-powered cybersecurity monitoring for mid-size companies.\nIndustry: Technology | Segment: Mid-Market | Region: EMEA | Employees: 412\n\nCommercials\n- Current annual revenue: $96,977 (P97 within Mid-Market)\n- Days to renewal: 43\n- Licensed seats: 150 | Active users: 64 | Seat utilisation: 43% (P22 within segment)\n\nEngagement and health\n- Days since last sales activity: 96 (P81 within segment; higher = longer silence)\n- Open support tickets: 8 (P87)\n- AI feature adoption: 0.18 (P34)\n\nLast sales call\n- Summary: Client mentioned they're moving to an in-house solution built by their HR team.\n- Labelled intent: risk | risk type: consolidation | expansion type: none\n\nScores (rule-based, see README)\n- Risk 87/100: No sales touch in 96 days; Only 43% of licensed seats in use; Last call: merger or move to in-house tool; 8 open support tickets; AI feature adoption low (0.18)\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 138.4 (urgency x1.5)\n\nSegment medians (Mid-Market)\n- seat utilisation: 59%\n- AI feature adoption: 0.31\n- days since last sales activity: 63\n- open support tickets: 4\n- annual revenue: $59,038\n"
+}

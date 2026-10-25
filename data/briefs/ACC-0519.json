@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0519",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Orbit Deal Labs is a $765K Enterprise Retail account in EMEA with 42 days to renewal. The company is merging with another business that uses Outreach, and the consolidation is expected to favour the incumbent; meanwhile we have had no sales contact for 123 days.",
+    "risks": [
+      "Merger with an Outreach shop: vendor consolidation is likely to go against us unless we make the case before day 42.",
+      "Only 36% of 222 seats in use (P6) and AI adoption 0.03; the usage story does not currently argue for keeping us.",
+      "123 days without a sales touch means we have no relationship with whoever is deciding post-merger."
+    ],
+    "opportunities": [],
+    "talking_points": [
+      "Ask who is leading the post-merger tooling decision and when it will be made.",
+      "Offer a side-by-side of our deployed workflows versus Outreach for the combined organisation, focused on the 81 active users' outcomes.",
+      "Explore a short-term renewal or bridge so the decision is not forced by the renewal date."
+    ],
+    "next_action": "This week: reach the executive sponsor to get a seat at the post-merger evaluation; without that, prepare the account as a probable loss.",
+    "unknowns": [
+      "Has the merger closed and who holds the budget now?",
+      "Will the combined company standardise on one tool, and on what timeline?"
+    ]
+  },
+  "context_card": "Account: Orbit Deal Labs (ACC-0519)\nWhat they do: Runs a direct-to-consumer e-commerce brand for sustainable home goods.\nIndustry: Retail | Segment: Enterprise | Region: EMEA | Employees: 48,666\n\nCommercials\n- Current annual revenue: $765,437 (P36 within Enterprise)\n- Days to renewal: 42\n- Licensed seats: 222 | Active users: 81 | Seat utilisation: 36% (P6 within segment)\n\nEngagement and health\n- Days since last sales activity: 123 (P96 within segment; higher = longer silence)\n- Open support tickets: 4 (P56)\n- AI feature adoption: 0.03 (P20)\n\nLast sales call\n- Summary: Account is merging with another company that uses Outreach. Consolidation likely favors incumbent.\n- Labelled intent: risk | risk type: consolidation | expansion type: none\n\nScores (rule-based, see README)\n- Risk 91/100: No sales touch in 123 days; Only 36% of licensed seats in use; Last call: merger or move to in-house tool; AI feature adoption very low (0.03)\n- Opportunity 2/100: no growth signals\n- Focus: risk | Priority 185.8 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Orbit Deal Labs (ACC-0519)\nWhat they do: Runs a direct-to-consumer e-commerce brand for sustainable home goods.\nIndustry: Retail | Segment: Enterprise | Region: EMEA | Employees: 48,666\n\nCommercials\n- Current annual revenue: $765,437 (P36 within Enterprise)\n- Days to renewal: 42\n- Licensed seats: 222 | Active users: 81 | Seat utilisation: 36% (P6 within segment)\n\nEngagement and health\n- Days since last sales activity: 123 (P96 within segment; higher = longer silence)\n- Open support tickets: 4 (P56)\n- AI feature adoption: 0.03 (P20)\n\nLast sales call\n- Summary: Account is merging with another company that uses Outreach. Consolidation likely favors incumbent.\n- Labelled intent: risk | risk type: consolidation | expansion type: none\n\nScores (rule-based, see README)\n- Risk 91/100: No sales touch in 123 days; Only 36% of licensed seats in use; Last call: merger or move to in-house tool; AI feature adoption very low (0.03)\n- Opportunity 2/100: no growth signals\n- Focus: risk | Priority 185.8 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

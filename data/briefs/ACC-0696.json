@@ -1,0 +1,28 @@
+{
+  "account_id": "ACC-0696",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Sync Care Studio is a $1.31M Enterprise Healthcare account in APAC renewing in 50 days. The last check-in was calm ('steady usage, no complaints'), but the data shows 104 days since sales contact, 39% of 1,774 seats in use, 9 open tickets and AI adoption 0.17.",
+    "risks": [
+      "39% seat utilisation (P10): 1,074 idle seats are hard to defend at a $1.31M renewal.",
+      "9 open tickets (P95) despite 'no complaints' on the call: the issues may not have reached the sponsor yet.",
+      "104 days since last sales touch and 'will re-evaluate at renewal' means the decision is open."
+    ],
+    "opportunities": [
+      "700 active users is a real base; the account is under-adopted, not disengaged."
+    ],
+    "talking_points": [
+      "Share the 9 open tickets with the Head of Operations and ask whether their teams are feeling them.",
+      "Propose an adoption review: why 1,074 seats are unused and whether to right-size or re-roll-out.",
+      "Ask what the re-evaluation at renewal will be based on."
+    ],
+    "next_action": "Within 5 business days: book a pre-renewal review with the Head of Operations covering tickets and seat utilisation.",
+    "unknowns": [
+      "Whether the 9 tickets are from the 700 active users or from teams that gave up.",
+      "Who will run the re-evaluation and on what criteria."
+    ]
+  },
+  "context_card": "Account: Sync Care Studio (ACC-0696)\nWhat they do: Specializes in medical billing automation and revenue cycle management.\nIndustry: Healthcare | Segment: Enterprise | Region: APAC | Employees: 14,855\n\nCommercials\n- Current annual revenue: $1,307,316 (P65 within Enterprise)\n- Days to renewal: 50\n- Licensed seats: 1,774 | Active users: 700 | Seat utilisation: 39% (P10 within segment)\n\nEngagement and health\n- Days since last sales activity: 104 (P92 within segment; higher = longer silence)\n- Open support tickets: 9 (P95)\n- AI feature adoption: 0.17 (P28)\n\nLast sales call\n- Summary: Check-in with Head of Operations. Steady usage, no complaints. They'll re-evaluate at next renewal cycle.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 73/100: No sales touch in 104 days; Only 39% of licensed seats in use; 9 open support tickets; AI feature adoption low (0.17)\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 136.5 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Sync Care Studio (ACC-0696)\nWhat they do: Specializes in medical billing automation and revenue cycle management.\nIndustry: Healthcare | Segment: Enterprise | Region: APAC | Employees: 14,855\n\nCommercials\n- Current annual revenue: $1,307,316 (P65 within Enterprise)\n- Days to renewal: 50\n- Licensed seats: 1,774 | Active users: 700 | Seat utilisation: 39% (P10 within segment)\n\nEngagement and health\n- Days since last sales activity: 104 (P92 within segment; higher = longer silence)\n- Open support tickets: 9 (P95)\n- AI feature adoption: 0.17 (P28)\n\nLast sales call\n- Summary: Check-in with Head of Operations. Steady usage, no complaints. They'll re-evaluate at next renewal cycle.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 73/100: No sales touch in 104 days; Only 39% of licensed seats in use; 9 open support tickets; AI feature adoption low (0.17)\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 136.5 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

@@ -1,0 +1,28 @@
+{
+  "account_id": "ACC-0421",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Ultra Story Solutions is a $1.23M Enterprise Media account in EMEA renewing in 36 days. The routine QBR was satisfied with no expansion planned; health is middling: 48% of 1,863 seats in use, AI adoption 0.20, 4 open tickets and 75 days since sales contact.",
+    "risks": [
+      "48% seat utilisation (P24) at a $1.23M renewal in 36 days; 978 seats are idle.",
+      "75 days since last sales touch."
+    ],
+    "opportunities": [
+      "Satisfied QBR and 885 active users: a stable base.",
+      "AI adoption 0.20 (P32) leaves room to show more value without selling more."
+    ],
+    "talking_points": [
+      "Confirm the renewal logistics early given 36 days.",
+      "Ask about the idle seats and offer a reallocation plan rather than waiting for them to raise it.",
+      "Suggest a short enablement on AI features for the finance users."
+    ],
+    "next_action": "Within 10 days: schedule the renewal confirmation call and close the 4 open tickets beforehand.",
+    "unknowns": [
+      "Whether the idle seats are a procurement artefact or a real adoption gap.",
+      "Whether finance is the only team using the product."
+    ]
+  },
+  "context_card": "Account: Ultra Story Solutions (ACC-0421)\nWhat they do: Builds audience engagement and subscription monetization tools for publishers.\nIndustry: Media | Segment: Enterprise | Region: EMEA | Employees: 16,191\n\nCommercials\n- Current annual revenue: $1,231,711 (P62 within Enterprise)\n- Days to renewal: 36\n- Licensed seats: 1,863 | Active users: 885 | Seat utilisation: 48% (P24 within segment)\n\nEngagement and health\n- Days since last sales activity: 75 (P67 within segment; higher = longer silence)\n- Open support tickets: 4 (P56)\n- AI feature adoption: 0.20 (P32)\n\nLast sales call\n- Summary: Routine QBR completed. Account is satisfied with current usage across finance. No expansion planned.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 39/100: No sales touch in 75 days; AI feature adoption low (0.20); 48% of licensed seats in use\n- Opportunity 7/100: no growth signals\n- Focus: healthy | Priority 83.7 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Ultra Story Solutions (ACC-0421)\nWhat they do: Builds audience engagement and subscription monetization tools for publishers.\nIndustry: Media | Segment: Enterprise | Region: EMEA | Employees: 16,191\n\nCommercials\n- Current annual revenue: $1,231,711 (P62 within Enterprise)\n- Days to renewal: 36\n- Licensed seats: 1,863 | Active users: 885 | Seat utilisation: 48% (P24 within segment)\n\nEngagement and health\n- Days since last sales activity: 75 (P67 within segment; higher = longer silence)\n- Open support tickets: 4 (P56)\n- AI feature adoption: 0.20 (P32)\n\nLast sales call\n- Summary: Routine QBR completed. Account is satisfied with current usage across finance. No expansion planned.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 39/100: No sales touch in 75 days; AI feature adoption low (0.20); 48% of licensed seats in use\n- Opportunity 7/100: no growth signals\n- Focus: healthy | Priority 83.7 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

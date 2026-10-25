@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0119",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Onyx Gene Analytics is a $792K Enterprise Healthcare account in LATAM with 116 days to renewal, running at 75% of 1,106 seats with good AI adoption (0.52) and a conversation 3 days old. After strong results in marketing they want to extend to two more teams and are discussing a 198-seat add-on.",
+    "risks": [],
+    "opportunities": [
+      "Expansion to two more teams with a 198-seat add-on under discussion.",
+      "75% utilisation (P79) and recent contact (3 days).",
+      "Last call: the client reported great results in marketing and wants to replicate them in two more teams."
+    ],
+    "talking_points": [
+      "Capture what worked in marketing as a repeatable playbook for the two new teams.",
+      "Confirm the 198-seat figure and timing.",
+      "Offer onboarding support for the new teams."
+    ],
+    "next_action": "This week: send the 198-seat add-on proposal with a rollout plan for the two teams.",
+    "unknowns": [
+      "Which two teams and their start dates.",
+      "Whether the add-on should align with the renewal in 116 days."
+    ]
+  },
+  "context_card": "Account: Onyx Gene Analytics (ACC-0119)\nWhat they do: Operates a network of outpatient clinics focused on preventive care.\nIndustry: Healthcare | Segment: Enterprise | Region: LATAM | Employees: 13,923\n\nCommercials\n- Current annual revenue: $791,806 (P38 within Enterprise)\n- Days to renewal: 116\n- Licensed seats: 1,106 | Active users: 832 | Seat utilisation: 75% (P79 within segment)\n\nEngagement and health\n- Days since last sales activity: 3 (P5 within segment; higher = longer silence)\n- Open support tickets: 2 (P33)\n- AI feature adoption: 0.52 (P76)\n\nLast sales call\n- Summary: Client saw great results in marketing and wants to extend to two more teams. Discussing 198 seat add-on.\n- Labelled intent: growth | risk type: none | expansion type: new_team\n\nScores (rule-based, see README)\n- Risk 0/100: no risk signals\n- Opportunity 89/100: 75% of seats in use, near seat cap; Last call: wants to roll out to another team; Active conversation (3 days since last touch); Strong AI feature adoption (0.52)\n- Focus: opportunity | Priority 139.8 (urgency x1.15)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Onyx Gene Analytics (ACC-0119)\nWhat they do: Operates a network of outpatient clinics focused on preventive care.\nIndustry: Healthcare | Segment: Enterprise | Region: LATAM | Employees: 13,923\n\nCommercials\n- Current annual revenue: $791,806 (P38 within Enterprise)\n- Days to renewal: 116\n- Licensed seats: 1,106 | Active users: 832 | Seat utilisation: 75% (P79 within segment)\n\nEngagement and health\n- Days since last sales activity: 3 (P5 within segment; higher = longer silence)\n- Open support tickets: 2 (P33)\n- AI feature adoption: 0.52 (P76)\n\nLast sales call\n- Summary: Client saw great results in marketing and wants to extend to two more teams. Discussing 198 seat add-on.\n- Labelled intent: growth | risk type: none | expansion type: new_team\n\nScores (rule-based, see README)\n- Risk 0/100: no risk signals\n- Opportunity 89/100: 75% of seats in use, near seat cap; Last call: wants to roll out to another team; Active conversation (3 days since last touch); Strong AI feature adoption (0.52)\n- Focus: opportunity | Priority 139.8 (urgency x1.15)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

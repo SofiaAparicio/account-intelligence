@@ -1,0 +1,28 @@
+{
+  "account_id": "ACC-0399",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Astra Med Group is a $759K Enterprise Healthcare analytics account in NA renewing in 39 days. The last call was a positive product feedback session, but the numbers disagree: 100 days without sales contact, 32% of 576 seats in use, 7 open tickets and AI adoption 0.04.",
+    "risks": [
+      "Renewal in 39 days with only 32% seat utilisation (P4): a hard renewal to justify internally.",
+      "100 days since last sales touch (P90) and 7 open tickets (P88).",
+      "AI adoption 0.04: the feature set they are paying for is largely unused."
+    ],
+    "opportunities": [
+      "The last call was constructive and they asked for dashboard module improvements: there is engagement to build on."
+    ],
+    "talking_points": [
+      "Follow up on the dashboard module feedback with a concrete status so they see they were heard.",
+      "Ask why 394 seats are unused and whether a right-sized renewal plus an adoption plan is preferable to churn.",
+      "Review the 7 open tickets together and commit to dates."
+    ],
+    "next_action": "Within 5 business days: book a renewal planning call that includes the dashboard feedback and a seat right-sizing option.",
+    "unknowns": [
+      "Whether 'overall satisfied' reflects the economic buyer or just the users on the call.",
+      "Whether the low utilisation is a rollout gap or a shrinking team."
+    ]
+  },
+  "context_card": "Account: Astra Med Group (ACC-0399)\nWhat they do: Offers population health analytics for insurance providers and health systems.\nIndustry: Healthcare | Segment: Enterprise | Region: NA | Employees: 49,752\n\nCommercials\n- Current annual revenue: $759,224 (P36 within Enterprise)\n- Days to renewal: 39\n- Licensed seats: 576 | Active users: 182 | Seat utilisation: 32% (P4 within segment)\n\nEngagement and health\n- Days since last sales activity: 100 (P90 within segment; higher = longer silence)\n- Open support tickets: 7 (P88)\n- AI feature adoption: 0.04 (P22)\n\nLast sales call\n- Summary: Product feedback session — they'd like improvements to dashboard module but overall satisfied.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 71/100: No sales touch in 100 days; Only 32% of licensed seats in use; AI feature adoption very low (0.04); 7 open support tickets\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 144.8 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Astra Med Group (ACC-0399)\nWhat they do: Offers population health analytics for insurance providers and health systems.\nIndustry: Healthcare | Segment: Enterprise | Region: NA | Employees: 49,752\n\nCommercials\n- Current annual revenue: $759,224 (P36 within Enterprise)\n- Days to renewal: 39\n- Licensed seats: 576 | Active users: 182 | Seat utilisation: 32% (P4 within segment)\n\nEngagement and health\n- Days since last sales activity: 100 (P90 within segment; higher = longer silence)\n- Open support tickets: 7 (P88)\n- AI feature adoption: 0.04 (P22)\n\nLast sales call\n- Summary: Product feedback session — they'd like improvements to dashboard module but overall satisfied.\n- Labelled intent: neutral | risk type: none | expansion type: none\n\nScores (rule-based, see README)\n- Risk 71/100: No sales touch in 100 days; Only 32% of licensed seats in use; AI feature adoption very low (0.04); 7 open support tickets\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 144.8 (urgency x1.5)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

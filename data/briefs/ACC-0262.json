@@ -1,0 +1,26 @@
+{
+  "account_id": "ACC-0262",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Xenon Bio Ventures is a $1.78M Enterprise Healthcare telemedicine account in NA, renewing in 54 days. An upsell discussion went very well: the Director of Engineering has internal buy-in and wants to fast-track 482 new seats, more than doubling the current 461.",
+    "risks": [],
+    "opportunities": [
+      "482 new seats requested with internal buy-in already secured.",
+      "AI adoption 0.73 (P95) and only 1 open ticket: strong product fit.",
+      "Recent conversation (29 days) and renewal in 54 days line up for a single expanded agreement."
+    ],
+    "talking_points": [
+      "Confirm the fast-track timeline and what 'done' means on their side (procurement, security review, provisioning).",
+      "Note that current utilisation is 60%: ask how the 482 seats will be rolled out so we can support adoption from day one.",
+      "Offer onboarding resources for the new users to protect the adoption rate."
+    ],
+    "next_action": "Within 3 business days: send the 482-seat expansion order and a rollout plan, aligned to the renewal in 54 days.",
+    "unknowns": [
+      "Which teams the 482 seats are for.",
+      "Whether the Director of Engineering's buy-in includes the budget holder."
+    ]
+  },
+  "context_card": "Account: Xenon Bio Ventures (ACC-0262)\nWhat they do: Provides telemedicine platforms connecting patients with specialists remotely.\nIndustry: Healthcare | Segment: Enterprise | Region: NA | Employees: 38,823\n\nCommercials\n- Current annual revenue: $1,780,578 (P91 within Enterprise)\n- Days to renewal: 54\n- Licensed seats: 461 | Active users: 278 | Seat utilisation: 60% (P46 within segment)\n\nEngagement and health\n- Days since last sales activity: 29 (P20 within segment; higher = longer silence)\n- Open support tickets: 1 (P18)\n- AI feature adoption: 0.73 (P95)\n\nLast sales call\n- Summary: Upsell discussion went very well. Director of Engineering has internal buy-in and wants to fast-track 482 new seats.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 3/100: no risk signals\n- Opportunity 80/100: Very strong AI feature adoption (0.73); Last call: asked about additional seats; Recent conversation (29 days since last touch); 60% of seats in use\n- Focus: opportunity | Priority 154.3 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Xenon Bio Ventures (ACC-0262)\nWhat they do: Provides telemedicine platforms connecting patients with specialists remotely.\nIndustry: Healthcare | Segment: Enterprise | Region: NA | Employees: 38,823\n\nCommercials\n- Current annual revenue: $1,780,578 (P91 within Enterprise)\n- Days to renewal: 54\n- Licensed seats: 461 | Active users: 278 | Seat utilisation: 60% (P46 within segment)\n\nEngagement and health\n- Days since last sales activity: 29 (P20 within segment; higher = longer silence)\n- Open support tickets: 1 (P18)\n- AI feature adoption: 0.73 (P95)\n\nLast sales call\n- Summary: Upsell discussion went very well. Director of Engineering has internal buy-in and wants to fast-track 482 new seats.\n- Labelled intent: growth | risk type: none | expansion type: seats\n\nScores (rule-based, see README)\n- Risk 3/100: no risk signals\n- Opportunity 80/100: Very strong AI feature adoption (0.73); Last call: asked about additional seats; Recent conversation (29 days since last touch); 60% of seats in use\n- Focus: opportunity | Priority 154.3 (urgency x1.3)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}

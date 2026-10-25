@@ -1,0 +1,29 @@
+{
+  "account_id": "ACC-0083",
+  "generated_on": "2026-10-25",
+  "generator": "Claude Fable 5.1 (coding session that built this repo); prompt = src/prompts.py::BRIEF_PROMPT",
+  "brief": {
+    "situation": "Delta Thera Hub is our second-largest Enterprise Healthcare account ($1.89M, P95) in EMEA, renewing in 135 days. They have raised ROI concerns, cite limited adoption in customer success and said they may not renew; only 30% of 1,761 seats are in use and 9 tickets are open.",
+    "risks": [
+      "Explicit 'may not renew' tied to ROI doubt on a $1.89M contract.",
+      "30% seat utilisation (P3) with 1,241 idle seats: the adoption problem they describe is real in the data.",
+      "9 open tickets and 102 days since last sales touch compound the value question."
+    ],
+    "opportunities": [
+      "135 days to renewal is enough time to run an adoption programme and show ROI before the decision.",
+      "AI adoption is mid-pack (0.32, P45): there are 520 engaged users to build on."
+    ],
+    "talking_points": [
+      "Ask what ROI evidence they expected to see and in which teams, so the success plan targets their definition.",
+      "Propose a 90-day adoption plan for customer success with measurable milestones, reviewed monthly before renewal.",
+      "Commit to clearing the 9 open tickets as a precondition, and ask which hurt most."
+    ],
+    "next_action": "Within 2 weeks: present a 90-day adoption and ROI plan to the stakeholder who raised the concern; start ticket clean-up immediately.",
+    "unknowns": [
+      "Who raised the ROI concern and do they own the renewal decision?",
+      "Are the 1,241 unused seats a rollout that stalled or a contract that was oversized from the start?"
+    ]
+  },
+  "context_card": "Account: Delta Thera Hub (ACC-0083)\nWhat they do: Develops electronic health record systems for regional hospital networks.\nIndustry: Healthcare | Segment: Enterprise | Region: EMEA | Employees: 39,867\n\nCommercials\n- Current annual revenue: $1,893,819 (P95 within Enterprise)\n- Days to renewal: 135\n- Licensed seats: 1,761 | Active users: 520 | Seat utilisation: 30% (P3 within segment)\n\nEngagement and health\n- Days since last sales activity: 102 (P91 within segment; higher = longer silence)\n- Open support tickets: 9 (P95)\n- AI feature adoption: 0.32 (P45)\n\nLast sales call\n- Summary: Account raised concerns about ROI. They've seen limited adoption across customer success and may not renew.\n- Labelled intent: risk | risk type: roi_doubt | expansion type: none\n\nScores (rule-based, see README)\n- Risk 98/100: Only 30% of licensed seats in use; No sales touch in 102 days; Last call: doubts about ROI / adoption; 9 open support tickets\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 168.2 (urgency x1.15)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569",
+  "prompt": "You are a senior sales strategist preparing an Account Executive for a\nmeeting with one customer. You will be given a context card with everything\nwe know about the account. Write a meeting-prep brief.\n\nRules\n- Use ONLY facts from the context card. Every risk and opportunity must name\n  the number or call signal it rests on (e.g. \"no sales touch in 134 days\").\n- Never invent names, dates, quotes, prices or product details.\n- If something important is unknown, put it in `unknowns` instead of guessing.\n- Peer comparisons use the percentiles given (\"bottom 10% of Mid-Market for\n  seat utilisation\"); do not compute new statistics.\n- Plain language an AE can read in 60 seconds. No marketing tone.\n\nReturn ONE JSON object with exactly these keys and nothing else:\n{\n  \"situation\": \"2 sentences: who they are, where the relationship stands\",\n  \"risks\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"opportunities\": \"0-3 bullets, each citing the number or call signal behind it\",\n  \"talking_points\": \"exactly 3, phrased as things the AE can say or ask\",\n  \"next_action\": \"one line: the single best next step and when\",\n  \"unknowns\": \"1-3 things the data cannot tell us that the AE should find out\"\n}\n\nContext card:\nAccount: Delta Thera Hub (ACC-0083)\nWhat they do: Develops electronic health record systems for regional hospital networks.\nIndustry: Healthcare | Segment: Enterprise | Region: EMEA | Employees: 39,867\n\nCommercials\n- Current annual revenue: $1,893,819 (P95 within Enterprise)\n- Days to renewal: 135\n- Licensed seats: 1,761 | Active users: 520 | Seat utilisation: 30% (P3 within segment)\n\nEngagement and health\n- Days since last sales activity: 102 (P91 within segment; higher = longer silence)\n- Open support tickets: 9 (P95)\n- AI feature adoption: 0.32 (P45)\n\nLast sales call\n- Summary: Account raised concerns about ROI. They've seen limited adoption across customer success and may not renew.\n- Labelled intent: risk | risk type: roi_doubt | expansion type: none\n\nScores (rule-based, see README)\n- Risk 98/100: Only 30% of licensed seats in use; No sales touch in 102 days; Last call: doubts about ROI / adoption; 9 open support tickets\n- Opportunity 0/100: no growth signals\n- Focus: risk | Priority 168.2 (urgency x1.15)\n\nSegment medians (Enterprise)\n- seat utilisation: 62%\n- AI feature adoption: 0.34\n- days since last sales activity: 58\n- open support tickets: 3\n- annual revenue: $1,025,569\n"
+}
